@@ -1,64 +1,58 @@
-.navBar{
-    padding:20px 0px;
+.navbar{
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navBar .logo{
-    width:150px
+.navbar .logo{
+    width: 150px;
 }
 
-.navBar-menu{
+.navbar-menu{
     display: flex;
     list-style: none;
-    gap:20px;
-    color:#49557e;
-    font-size:18px
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
 }
-
-.navBar-right{
-    display:flex;
+.navbar-right{
+    display: flex;
     align-items: center;
     gap:40px;
 }
 
-.navBar button{
-    background:transparent;
+.navbar button{
+    background: transparent;
     font-size: 16px;
-    color:#49557e;
-    border: 1px solid tomato;
-    padding:10px 30px;
+    color: #49557e;
+    border: 1px solid #363636;
+    padding: 10px 30px;
     border-radius: 50px;
-    cursor:pointer;
-    transition:0.3s
+    cursor: pointer;
+    transition: 0.3s;
 }
-
-.navBar button:hover{
+.navbar button:hover{
     background-color: #fff4f2;
 }
-
-.navBar .active{
-    padding-bottom:2px;
+.navbar .active{
+    padding-bottom: 2px;
     border-bottom: 2px solid #49557e;
-
 }
-
-.navBar li{
-    cursor:pointer;
+.navbar li{
+    cursor: pointer;
 }
-.navBar-search-icon{
-    position:relative;
+.navbar-search-icon{
+    position: relative;
 }
-
-.navBar-search-icon .dot{
+.navbar-search-icon .dot{
     position: absolute;
     min-width: 10px;
     min-height: 10px;
     background-color: tomato;
     border-radius: 5px;
     top:-8px;
-    right:-8px;
+    right: -8px;
 }
 .navbar-profile{
     position: relative;
@@ -94,64 +88,45 @@
 .nav-profile-dropdown li:hover{
     color:tomato;
 }
-@media(max-width:1050px){
+@media (max-width:1050px) {
     .navbar .logo{
-        width:140px;
+        width:140px ;
     }
-    .navBar-menu{
-        gap:20px;
+    .navbar-menu{
+        gap: 20px;
         font-size: 17px;
     }
-    .navBar-right{
-        gap:30px;
+    .navbar-right{
+        gap: 30px;
     }
     .navbar-right img{
-        width:22px;
+        width: 22px;
     }
-    .navBar-right button{
-        padding:8px 25px;
+    .navbar-right button{
+        padding: 8px 25px;
     }
 }
-
-@media(max-width:900px){
+@media (max-width:900px) {
     .navbar .logo{
-        width:120px;
+        width:120px ;
     }
-    .navBar-menu{
-        gap:15px;
+    .navbar-menu{
+        gap: 15px;
         font-size: 16px;
     }
-    .navBar-right{
-        gap:20px;
+    .navbar-right{
+        gap: 20px;
     }
     .navbar-right img{
-        width:20px;
+        width: 20px;
     }
-    .navBar-right button{
-        padding:7px 20px;
+    .navbar-right button{
+        padding: 7px 20px;
         font-size: 15px;
     }
 }
-
-@media(max-width:800px){
-    .navBar-menu{
-        display:none;
+@media (max-width:750px) {
+    .navbar-menu{
+       display: none;
     }
 }
-@media(max-width:450px){
-    .navBar-right img{
-        width:20px;
-    }
-}
-@media(max-width:450px){
-    .navBar-right img{
-        max-width:20px;
-
-    }
-}
-@media(max-width:450px){
-    .navBar img.logo{
-        max-width: 100px;
-    }
-}
-
