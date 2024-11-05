@@ -34,7 +34,7 @@ app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
 
 // Serve static files from the frontend build directory
-app.use(express.static(path.join(__dirname, '../frontend/dist')));
+app.use(express.static(path.join(__dirname, '../Frontend/dist')));
 
 app.get("/", (req, res) => {
     res.send("API Working");
