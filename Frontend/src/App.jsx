@@ -18,7 +18,7 @@ const App = () => {
   // Keep-alive functionality
   useEffect(() => {
     const keepAlive = () => {
-      fetch('https://food-del-s2l8.onrender.com/keep-alive')
+      fetch('https://food-delivery-app-backend-7hco.onrender.com/keep-alive')
         .then(response => console.log('Pinged backend:', response.status))
         .catch(error => console.error('Keep-alive error:', error));
     };
