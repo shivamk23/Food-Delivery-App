@@ -45,7 +45,7 @@ app.get('/keep-alive', (req, res) => {
   
 // Handle any other requests by serving the frontend's index.html
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../frontend/dist', 'index.html'));
+    res.sendFile(path.resolve(__dirname, '../Frontend/dist', 'index.html'));
 });
 
 app.listen(PORT, () => {
