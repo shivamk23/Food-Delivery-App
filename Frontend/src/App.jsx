@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
+// import { ToastContainer } from 'react-toastify'
 // import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
@@ -16,7 +16,7 @@ const App = () => {
 
   useEffect(() => {
     const keepAlive = () => {
-      fetch('https://food-del-s2l8.onrender.com/keep-alive')
+      fetch('https://food-delivery-app-backend-7hco.onrender.com/keep-alive')
         .then(response => console.log('Pinged backend:', response.status))
         .catch(error => console.error('Keep-alive error:', error));
     };
@@ -31,7 +31,7 @@ const App = () => {
   return (
     <>
     {showLogin?<LoginPopUp setShowLogin={setShowLogin}/>:<></>}
-    <ToastContainer />
+    {/* <ToastContainer /> */}
     <div className='app'>
       <Navbar setShowLogin={setShowLogin}/>
       <Routes>
