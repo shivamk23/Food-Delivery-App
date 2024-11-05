@@ -1,5 +1,5 @@
 import express from "express";
-import authMiddleWare from "../middlewares/auth.js";
+import authMiddleWare from "../middleware/auth.js";
 import { PlaceOrder, verifyOrder, userOrders, listOrders, updateStatus} from "../controllers/orderController.js";
 
 const orderRouter = express.Router();
