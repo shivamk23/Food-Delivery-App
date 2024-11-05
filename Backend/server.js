@@ -18,7 +18,7 @@ const __dirname = path.dirname(__filename);
 // middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://food-delivery-app-frontend-xj8d.onrender.com' , 'https://food-delivery-app-admin-9dwl.onrender.com'], // Add deployed front-end origin
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://food-delivery-app-frontend-75k3.onrender.com' , 'https://food-delivery-app-admin-9dwl.onrender.com'], // Add deployed front-end origin
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
