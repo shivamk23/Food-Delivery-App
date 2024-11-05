@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 // import { ToastContainer } from 'react-toastify'
@@ -14,7 +14,7 @@ import MyOrders from './pages/MyOrders/MyOrders'
 const App = () => {
   const[showLogin,setShowLogin] = useState(false)
 
-  useEffect(() => {
+      useEffect(() => {
     const keepAlive = () => {
       fetch('https://food-delivery-app-backend-7hco.onrender.com/keep-alive')
         .then(response => console.log('Pinged backend:', response.status))
