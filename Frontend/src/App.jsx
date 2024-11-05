@@ -9,14 +9,14 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import Verify from './pages/Verify/Verify'
 import MyOrders from './pages/MyOrders/MyOrders'
-import LoginPopup from './components/LoginPopup/LoginPopup'
+import LoginPopUp from './components/LoginPopup/LoginPopup'
 
 const App = () => {
   const[showLogin,setShowLogin] = useState(false)
 
   return (
     <>
-    {showLogin?<LoginPopup setShowLogin={setShowLogin}/>:<></>}
+    {showLogin?<LoginPopUp setShowLogin={setShowLogin}/>:<></>}
     <div className='app'>
       <Navbar setShowLogin={setShowLogin}/>
       <Routes>
